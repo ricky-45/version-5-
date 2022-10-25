@@ -1,0 +1,54 @@
+<body>
+    <div id="modal-content-wrapper " class="d-inline-flex col-lg-12">
+
+        <div class="row">
+            <header id="modal-header" class="col-lg-12">
+                <h1 id="modal-title" class="p-2">Candidate Info</h1>
+
+            </header>
+            <ul class="align-content-md-start col-lg-12 offset-1">
+                <li>{{candidateObj.candidateId}}</li>
+                <li>{{candidateObj.candidateName}}</li>
+                <li>{{candidateObj.age}}</li>
+                <li>{{candidateObj.expectedLwd}}</li>
+                <li>{{candidateObj.location}}</li>
+                <li>{{candidateObj.maritialStatus}}</li>
+                <li>{{candidateObj.relevantExperiance}}</li>
+                <li>{{candidateObj.skills}}</li>
+                <li>{{candidateObj.technology}}</li>
+                <li>{{candidateObj.totalExperiance}}</li>
+            </ul>
+        </div>
+
+
+
+        <div class="container">
+            <div class="row d-lg-flex">
+                <h5 class="col-lg-12 mt-5 h-60">Add Attachments</h5>
+                <form class="col-lg-12">
+                    <div class="form-group">
+                        <input  mat-raised-button type="file"  (change)="onImageUpload($event)" class="btn1">
+                        <br><br>
+
+                        <input mat-raised-button  type="button" (click)="imageUploadAction()" value="Upload Image" class="btn1">
+                    </div>
+                    <div>
+                        <output *ngIf=successResponse class="success"><b>{{successResponse}}</b></output>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" id="image" placeholder="Search Image" [(ngModel)]="image" name="image" />
+                        <input type="button" (click)="viewImage()" value="View Image" class="btn1">
+                    </div>
+                    <div *ngIf="dbImage">
+                        <img [src]="dbImage">
+                    </div>
+                </form>
+                <pre></pre>
+                <footer id="modal-footer" class="col-lg-12">
+                    <button mat-raised-button id="modal-close-button" (click)="closeModal()">Close</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>

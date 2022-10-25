@@ -1,0 +1,90 @@
+body{
+
+    background-image: linear-gradient( to top,#baafe4,#8bffff);
+}
+
+    a{
+
+        border: none;
+    
+        outline: none;
+    
+        height: 40px;
+    
+        width: 100px;
+    
+        background-color:white;
+    
+        color: #45beaa;
+    
+        border-radius: 4px;
+    
+        font-weight: bold;
+    
+    }
+    
+    
+    
+    button:hover{
+    
+        background-color:#45BEAA ;
+    
+        border:1px solid;
+    
+        color :white;
+    
+    }
+
+
+    h1{
+
+      color:whitesmoke;
+      size: 50%;
+      font-family: Arial, Helvetica, sans-serif;
+  
+
+    }
+
+    
+    
+
+
+
+    /* .container,#img{
+        border:1px solid black;
+    } */
+
+    #conl{
+        margin-left:23%;
+    }
+
+    .row{
+
+        border-radius: 15px;
+    }
+
+
+.rounded{
+
+    border-radius: 25px;
+}
+
+
+
+
+a:hover{
+    background-color:#45BEAA ;
+    
+        border:1px solid;
+    
+        color :white;
+
+
+}
+
+
+
+.radius{
+
+    border-radius: 70%;
+}
